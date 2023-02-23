@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 .primary-navigation .left {
   flex: 1;
@@ -42,12 +47,32 @@ body {
 .primary-navigation .left .ham-menu .first,
 .primary-navigation .left .ham-menu .second,
 .primary-navigation .left .ham-menu .third {
-  width: 20px;
+  width: 17px;
   height: 2px;
   background-color: black;
+  transition-duration: 0.5s;
+}
+.primary-navigation .left .ham-menu .first-toggle {
+  transform-origin: left;
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
+}
+.primary-navigation .left .ham-menu .second-toggle {
+  visibility: hidden;
+  transition-duration: 0.1s;
+}
+.primary-navigation .left .ham-menu .third-toggle {
+  transform-origin: left;
+  transform: rotate(-45deg);
+  transition-duration: 0.3s;
 }
 .primary-navigation .left .ham-menu:hover {
-  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.primary-navigation .left .ham-menu:hover .first,
+.primary-navigation .left .ham-menu:hover .second,
+.primary-navigation .left .ham-menu:hover .third {
+  background-color: #174ee2;
 }
 .primary-navigation .left .logo {
   position: relative;
@@ -78,6 +103,38 @@ body {
 }
 .primary-navigation .right .search {
   margin: 0px 0px 0px 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-bg {
+  margin-top: 140px;
+  z-index: 50;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(48, 48, 48, 0.3176470588);
+}
+.modal-bg .modal {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.modal-bg .modal .wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Abril Fatface";
+  text-decoration: none;
+}
+.modal-bg .modal .wrapper a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+.modal-bg .modal .wrapper a:hover {
+  color: #174ee2;
 }
 
 .hr {

@@ -30,10 +30,10 @@
     <div class="wrapper">
       <nav class="primary-navigation">
         <div class="left">
-          <button class="ham-menu">
-            <div class="first"></div>
-            <div class="second"></div>
-            <div class="third"></div>
+          <button class="ham-menu" id="hamBtn">
+            <div class="first" id="hambtnfirst"></div>
+            <div class="second" id="hambtnsecond"></div>
+            <div class="third" id="hambtnthird"></div>
           </button>
           <div class="logo">
             <a href="#">
@@ -74,6 +74,17 @@
         </div>
       </nav>
     </div>
+    <div class="hide" id="hamMenu">
+      <div class="modal">
+        <div class="wrapper">
+          <a href="#about-me">About me</a>
+          <a href="#our-services">Our services</a>
+          <a href="#about-me">Recent projects</a>
+          <a href="#lets-work-together">Let's work together</a>
+        </div>
+      </div>
+    </div>
+
     <!-- horizontal line -->
     <hr class="hr" />
     <!-- section-one -->
@@ -161,7 +172,7 @@
       </section>
     </div>
     <!-- section-three -->
-    <div class="wrapper">
+    <div class="wrapper" id="about-me">
       <section class="three">
         <h2 class="small-title">ABOUT ME</h2>
         <div class="line"></div>
@@ -198,7 +209,7 @@
       </div>
     </section>
     <!-- section-five -->
-    <div class="wrapper">
+    <div class="wrapper" id="our-services">
       <section class="five">
         <h2 class="small-title">OUR SERVICES</h2>
         <div class="line"></div>
@@ -275,7 +286,7 @@
       </section>
     </div>
     <!-- section-eight -->
-    <div class="wrapper">
+    <div class="wrapper" id="recent-projects">
       <div class="eight">
         <h2 class="small-title">RECENT PROJECTS</h2>
         <div class="line"></div>
@@ -321,7 +332,7 @@
       </div>
     </div>
     <!-- section-nine -->
-    <section class="nine">
+    <section class="nine" id="lets-work-together">
       <div class="wrapper">
         <h2 class="small-title">Let's work together</h2>
         <div class="line"></div>
@@ -414,6 +425,7 @@
         </div>
       </div>
     </footer>
+
     <!-- scripts -->
     <script src="script.js"></script>
   </body>

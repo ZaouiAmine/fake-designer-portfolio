@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -25,6 +28,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
+  z-index: 100;
   .left {
     flex: 1;
     display: flex;
@@ -37,17 +41,39 @@ body {
       justify-content: space-between;
 
       margin: 0px 30px 0px 0px;
+
       background-color: transparent;
       border: none;
       .first,
       .second,
       .third {
-        width: 20px;
+        width: 17px;
         height: 2px;
         background-color: black;
+        transition-duration: 0.5s;
       }
-      &:hover {
-        background-color: rgb(240, 240, 240);
+
+      .first-toggle {
+        transform-origin: left;
+        transform: rotate(45deg);
+        transition-duration: 0.3s;
+      }
+      .second-toggle {
+        visibility: hidden;
+        transition-duration: 0.1s;
+      }
+      .third-toggle {
+        transform-origin: left;
+        transform: rotate(-45deg);
+        transition-duration: 0.3s;
+      }
+    }
+    .ham-menu:hover {
+      cursor: pointer;
+      .first,
+      .second,
+      .third {
+        background-color: #174ee2;
       }
     }
 
@@ -86,6 +112,36 @@ body {
     }
     .search {
       margin: 0px 0px 0px 30px;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.modal-bg {
+  margin-top: 140px;
+  z-index: 50;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #30303051;
+  .modal {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      font-family: "Abril Fatface";
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 0px;
+      }
+      a:hover {
+        color: #174ee2;
+      }
     }
   }
 }
