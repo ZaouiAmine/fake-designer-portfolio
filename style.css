@@ -1078,4 +1078,119 @@ body {
   color: white;
   border: 1px solid #174ee2;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #303030;
+  padding: 80px 0px;
+}
+footer .wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .wrapper .section,
+footer .wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+footer .wrapper .section {
+  margin-top: 20px;
+}
+footer .wrapper .section .social-media {
+  display: flex;
+  width: 100%;
+}
+footer .wrapper .section .social-media a {
+  margin-right: 5px;
+}
+footer .wrapper .section {
+  flex: 1;
+  padding-right: 20px;
+  min-width: 280px;
+}
+footer .wrapper .section h2 {
+  color: white;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-family: "Rubik";
+  margin-bottom: 20px;
+}
+footer .wrapper .section h5,
+footer .wrapper .section p {
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 22.4px;
+  font-family: "Rubik";
+  font-weight: 400;
+  margin: 5px 0px;
+}
+footer .wrapper .section h4 {
+  color: white;
+  font-size: 14px;
+  line-height: 22.4px;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+footer .wrapper .section .form button {
+  border: 1px solid #e4e4e4;
+  color: #e4e4e4;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 20px 0px 30px 0px;
+}
+footer .wrapper .section .form button:hover {
+  background-color: #174ee2;
+  color: white;
+  border: 1px solid #174ee2;
+  cursor: pointer;
+}
+footer .wrapper .section .form input {
+  padding: 15px;
+  padding-left: 0px;
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  color: #e4e4e4;
+  margin: 15px 0px;
+  font-family: "Rubik";
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+footer .wrapper .section .form input:focus::-moz-placeholder, footer .wrapper .section .form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+footer .wrapper .section .form input:focus::placeholder,
+footer .wrapper .section .form textarea:focus::placeholder {
+  color: transparent;
+}
+footer .wrapper .devider {
+  width: 100%;
+  border: none;
+  background-color: #8f8f8f;
+  height: 1px;
+  margin-top: 50px;
+}
+footer .wrapper .copyright {
+  margin: 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 19.5px;
+  font-family: "Rubik";
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
