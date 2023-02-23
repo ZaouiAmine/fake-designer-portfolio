@@ -2,7 +2,7 @@
 
 This repository contains a simple landing page for a fictional designer. The landing page is built using HTML, CSS, and JavaScript, and is designed to be responsive and mobile-friendly.
 
-![alt text](https://github.com/ZaouiAmine/fake-designer-portfolio/blob/main/website.jpg?raw=true)
+![ScreenShot](/assets/website.png)
 
 
 ## Visit the website
