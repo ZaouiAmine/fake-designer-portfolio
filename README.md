@@ -2,6 +2,10 @@
 
 This repository contains a simple landing page for a fictional designer. The landing page is built using HTML, CSS, and JavaScript, and is designed to be responsive and mobile-friendly.
 
+## Visit the website
+
+https://fake-designer-portfolio.netlify.app/
+
 ## Getting Started
 
 To use the landing page, simply clone or download the repository to your local machine and open the `index.html` file in your web browser. The landing page can be customized by editing the HTML, CSS, and JavaScript files in the `src` directory.
