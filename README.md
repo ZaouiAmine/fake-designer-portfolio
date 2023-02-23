@@ -1,6 +1,10 @@
-# Simple Landing Page
+# Fake designer portfolio
 
 This repository contains a simple landing page for a fictional designer. The landing page is built using HTML, CSS, and JavaScript, and is designed to be responsive and mobile-friendly.
+
+## Visit the website
+
+https://fake-designer-portfolio.netlify.app/
 
 ## Getting Started
 
